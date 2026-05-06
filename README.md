@@ -1,18 +1,24 @@
-# course-material
+# md-07 — Joining data & data communication using Quarto
 
-This directory contains course material for  CVEN 5999: Special Topics - Data Analytics for Development. 
+Homework repo for **Module 7** of [CVEN 5999: Special Topics — Data Analytics for Development](https://cven5999-ss26.github.io/website/) (Summer 2026, CU Boulder).
 
-The directory is structured by weeks (wk-01, wk-02, etc.). Each weekly directory contains templates for:
+Lecture: `lec-05` · Module date: 2026-07-06 · Homework due: 2026-07-10
 
-- live coding exercises (live-XX)
-- programming exercises (program-XX)
-- homework exercises (hw-XX)
-- learning reflections (learning-XX)
+## What's in here
 
-The XX is replaced by the lecture week. Where several exercises exist for one category, then the files receive one additional letter starting with 'a', then 'b', etc.
+- `hw-01-data-import-exploration.qmd` — data import & exploration
+- `hw-02-filter-join.qmd` — filtering and joining (with `-solutions` companion)
+- `hw-03-data-analysis.qmd` — data analysis (with `-solutions` companion)
+- `hw-04-data-visualization-pivoting.qmd` — visualization and pivoting (with `-solutions` companion)
+- `learning-07.qmd` — learning reflection
+- `data/`, `img/` — datasets and images
 
+## How to use
 
- 
+1. Clone into Posit Cloud (workspace linked from the course site).
+2. Open `md-07.Rproj`.
+3. Render `.qmd` files with Quarto.
 
+## License
 
-
+[CC BY 4.0](LICENSE.md) — © 2026 Lars Schöbitz

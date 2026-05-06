@@ -128,13 +128,13 @@ ggplot(data = generation_country_income,
 3.  Write a meaningful commit message (e.g. "Completed week 6 homework section 2") in the **Commit message** box
 4.  Click **Commit**. Note that every commit needs to have a commit message associated with it.
 5.  Click **Push** to send your changes to GitHub.
-6.  Go to your wk-06-USERNAME GitHub repo (where USERNAME is your GitHub username) and refresh the page. You should see your commit message next to the updated files.
+6.  Go to your md-07-USERNAME GitHub repo (where USERNAME is your GitHub username) and refresh the page. You should see your commit message next to the updated files.
 
 ## Open an issue on GitHub
 
-Once you have ensured that the Quarto document renders without errors and you have pushed all your changes to GitHub, it is to complete the assignment by opening an issue on your wk-06-USERNAME GitHub repo (where USERNAME is your GitHub username).
+Once you have ensured that the Quarto document renders without errors and you have pushed all your changes to GitHub, it is to complete the assignment by opening an issue on your md-07-USERNAME GitHub repo (where USERNAME is your GitHub username).
 
-1.  Navigate to your wk-06-USERNAME GitHub repo (where USERNAME is your GitHub username).
+1.  Navigate to your md-07-USERNAME GitHub repo (where USERNAME is your GitHub username).
 2.  Click on **Issues**, and then **New issue** button.
 3.  Write a meaningful title in the **Title** field
 4.  Tag the course instructor with using the `@` sign in combination with `larnsce` as the username
