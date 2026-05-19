@@ -2,8 +2,6 @@
 
 Homework repo for **Module 7** of [CVEN 5999: Special Topics — Data Analytics for Development](https://cven5999-ss26.github.io/website/) (Summer 2026, CU Boulder).
 
-Lecture: `lec-05` · Module date: 2026-07-06 · Homework due: 2026-07-10
-
 ## What's in here
 
 - `hw-01-data-import-exploration.qmd` — data import & exploration
