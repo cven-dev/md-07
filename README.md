@@ -1,7 +1,5 @@
 # md-07 — Joining data & data communication using Quarto
 
-Homework repo for **Module 7** of [CVEN 5999: Special Topics — Data Analytics for Development](https://cven5999-ss26.github.io/website/) (Summer 2026, CU Boulder).
-
 ## What's in here
 
 - `hw-01-data-import-exploration.qmd` — data import & exploration
