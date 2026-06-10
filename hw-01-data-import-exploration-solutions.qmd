@@ -1,14 +1,14 @@
 ---
-title: "Final Practice"
+title: "Final Practice (Solutions)"
 subtitle: "Section 01"
 format:
   html:
     embed-resources: true
-execute: 
+execute:
   echo: true
   warning: false
 editor: visual
-editor_options: 
+editor_options:
   chunk_output_type: console
 ---
 
@@ -25,9 +25,8 @@ library(here)
 -   `what-a-waste-city-level-data-distance.csv`, and assign to the object `distance`
 
 ```{r}
-
-
-
+city_data <- read_csv(here("data/what_a_waste/what-a-waste-city-level-data.csv"))
+distance <- read_csv(here("data/what_a_waste/what-a-waste-city-level-data-distance.csv"))
 ```
 
 # Task 1.1
@@ -49,9 +48,8 @@ The data that is used for these exercises are subsets of data from the [What a W
 -   all variables that start with "waste"
 
 ```{r}
-
-
-
+city_data |>
+  select(city, income_id, starts_with("waste"))
 ```
 
 # Task 1.3
@@ -64,9 +62,8 @@ The data that is used for these exercises are subsets of data from the [What a W
 -   not transportation_distance_na
 
 ```{r}
-
-
-
+city_data |>
+  select(city, income_id, contains("distance"), -transportation_distance_na)
 ```
 
 # Task 1.4
@@ -76,9 +73,8 @@ The data that is used for these exercises are subsets of data from the [What a W
 2.  Store the subset as a new object in your environment with the name `distance_complete`
 
 ```{r}
-
-
-
+distance_complete <- distance |>
+  filter(!is.na(transportation_distance_total_km_year))
 ```
 
 # Task 1.5
@@ -86,9 +82,8 @@ The data that is used for these exercises are subsets of data from the [What a W
 1.  Start with the `distance_complete` object and use the `arrange()` function to display the 'transporation_distance_disposal_site' variable in descending order.
 
 ```{r}
-
-
-
+distance_complete |>
+  arrange(desc(transporation_distance_disposal_site))
 ```
 
 # Task 1.6
@@ -100,9 +95,9 @@ The data that is used for these exercises are subsets of data from the [What a W
 3.  Store the result as a new object in your environment with the name `distance_complete_extended`
 
 ```{r}
-
-
-
+distance_complete_extended <- distance_complete |>
+  mutate(trips_day = transportation_distance_total_km_year / transporation_distance_disposal_site / 365) |>
+  mutate(trips_1000_ppl_day = trips_day / pop * 1000)
 ```
 
 # Task 1.7
@@ -110,9 +105,8 @@ The data that is used for these exercises are subsets of data from the [What a W
 1.  Use the `filter()` function to create a subset from `distance_complete_extended` containing observations for cities where the number of trips per 1000 people and day is between 1 (inclusive) and 2 (not inclusive).
 
 ```{r}
-
-
-
+distance_complete_extended |>
+  filter(trips_1000_ppl_day >= 1 & trips_1000_ppl_day < 2)
 ```
 
 # Task 1.8
